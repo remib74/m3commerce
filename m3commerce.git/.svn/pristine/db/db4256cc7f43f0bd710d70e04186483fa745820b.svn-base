@@ -20,8 +20,6 @@ justakefive[at]free.fr
 				
                                 $(".imgG").colorbox({ transition:"elastic",speed:"50",height:"75%",width:"50%",retinaImage:true,fadeOut:"50" });
 				 
-                                $(".contactI").colorbox({ transition:"elastic",speed:"50",height:"50%",width:"30%",retinaImage:true,fadeOut:"50" });
-				  
 				//Example of preserving a JavaScript event for inline calls.
 				$("#click").click(function(){ 
 					$('#click').css({"background-color":"rgb(30,30,30,0.3)", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
@@ -58,12 +56,41 @@ include_once 'inc/count.php';
                 </header>
                  <div class="produits">
                     <div class="produits-accueil">
-                              
-                        <?php
-                              include_once 'produits.php';
-                                   ?>
+                               <?php
+      $sqlprod = "SELECT * FROM m3_prod ORDER BY rubrique"; 
+     
+     
+
+        foreach ($conn->query($sqlprod) as $row) {
+            $rowid = $row['id'];
+            $rowRub = $row['rubrique'];
+            $rowTit = $row['title'];
+            $rowFor = $row['format'];
+            $rowPri = $row['prix'];
+              echo 
+        "<div class='prod'>" .
+        "<div class='img-prod'>".
+        "<a class='imgG' href='img/prod/$rowRub/$rowid.jpg'><img src='img/prod/$rowRub/$rowid.jpg' ></a></div>".
+        
+
+            "<div class='txt-prod'>"."<div class='t-Rub'>$rowRub </div>".
+                                       "<div class='t-prod'>$rowTit </div>".
+                                "<div class='t-prod'> $rowFor</div>".
+                                "<div class='t-prod'>$rowPri <span>&euro;</span></div>".
+                            "</div>".
+                             "<div class='buy'>".
+                    "<img src='template/m3style/imgs/buy.jpg' onclick=''></div>".
+                    "</div>";
+}
+  $conn=null;
+							?>
+      
+                          
+
+                        
+
+
                 </div>
-                     
             </div>
             </div>
         </div>
