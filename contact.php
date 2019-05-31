@@ -12,22 +12,20 @@ justakefive[at]free.fr
 <link href="colorbox.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <?php
-        
-        ?>
-         <div id="main">
+           <?php 
+           ?>
+
+ <div id="main">
 
          <div id="container">
          <div id="formulaire">
-             <img src="template/m3style/imgs/logo.png">
-                                <form style='margin-top:50px;'>
-                                    <input type="text" name="email"  class="form-control" value="votre email"><br/>
-                                    <textarea id="textarea"  class="form-control">votre message</textarea><br/>
-                                    <button  class="form-control">submit</button><br/>
-                                    <p>&nbsp;</p><p>&nbsp;</p>
-                                    <p>Vous pouvez me contacter via le formulaire
-                                    Pour connaître les modalités d'achat.
-                                    </p>
-                                </form></div></div></div>
+      
+   <form action="inc/formC.php" method="post">
+Entrez votre adresse mail: <input type="text" name="email"><br>
+Message:<br>
+<textarea name="message" rows="8" cols="50"></textarea><br>
+<input type="submit" value="Envoyer le mail">
+</form>
+         </div></div></div>
     </body>
 </html>
