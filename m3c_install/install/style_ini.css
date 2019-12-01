@@ -1,0 +1,132 @@
+/*
+m3commerce the cms that's strong
+You can use, m3commerce for hobbies/business
+justakefive[at]free.fr
+*/
+/* 
+    Created on : Jun 6, 2018, 7:57:38 PM
+    Author     : remib2606
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+        font-family:arial,helvetica;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    
+text-decoration:none;
+color:#333;
+    
+}
+
+a:hover{
+    
+text-decoration:none;
+color:#ccc;
+    
+}
+
+
+#box_ini{
+    padding:20px;
+    margin:auto;
+    margin-top:200px;
+    width:500px;
+    height:300px;
+    background-color: #ccc;
+    border:solid 1px #bbb;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align:center;
+}
+#box_install{
+    padding:20px;
+    margin:auto;
+    margin-top:50px;
+    width:700px;
+    height:750px;
+    background-color: #ccc;
+    border:solid 1px #bbb;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align:center;
+}
+#form_ini{
+    padding:50px;
+    margin:auto;
+    width:400px;
+    height:450px;
+    background-color: #fcfcfc;
+    border:solid 1px #bbb;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+}
+.title_put{
+    
+    margin-top:10px;
+    
+}
+#installok{
+    
+   padding:20px;
+    margin:auto;
+    margin-top:200px;
+    width:500px;
+    height:300px;
+    background-color: #ccc;
+    border:solid 1px #bbb;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align:center;
+
+}
