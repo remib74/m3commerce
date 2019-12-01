@@ -1,8 +1,8 @@
 <?php
  
 /* Initialisation des variables */
-$from = "webmaster@tld.com"; // l'expéditeur : remplacez ici domaine.ext par votre domaine
-$to = "webmaster@tld.com"; // le destinataire : mettez ici votre adresse mail valide
+$from = "remib.74@free.fr"; // l'expéditeur : remplacez ici domaine.ext par votre domaine
+$to = "remib.74@free.fr"; // le destinataire : mettez ici votre adresse mail valide
  
 /* Préparation */
 $subject = "Contact_achat_M3c"; // le sujet du mail

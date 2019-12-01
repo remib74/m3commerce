@@ -6,9 +6,9 @@
  * justakefive[at]free.fr
  */
 
-      $sqlprod = "SELECT * FROM m3_prod ORDER BY rubrique"; 
+      $sqlprod = "SELECT * FROM m3_prod WHERE rubrique='pastel' ORDER BY id"; 
      
-     
+      
 
         foreach ($conn->query($sqlprod) as $row) {
             $rowid = $row['id'];
@@ -16,7 +16,8 @@
             $rowTit = $row['title'];
             $rowFor = $row['format'];
             $rowPri = $row['prix'];
-              echo 
+           
+            echo 
         "<div class='prod'>" .
         "<div class='img-prod'>".
         "<a class='imgG' href='img/prod/$rowRub/$rowid.jpg'><img src='img/prod/$rowRub/$rowid.jpg' ></a></div>".
@@ -28,9 +29,10 @@
                                 "<div class='t-prod'>$rowPri <span>&euro;</span></div>".
                             "</div>".
                              "<div class='buy'>".
-                    "<a href='contact.php'class='contactI'><img src='template/m3style/imgs/buy.jpg'/></div></a>".
-                    "</div>";
-}
-  $conn=null;
-							
+                      
+                    "<a href='contact.php?rowid=$rowid&&rowRub=$rowRub&rowTit=$rowTit&rowFor=$rowFor&rowPri=$rowPri'  ><img src='template/m3style/imgs/buy.jpg'/></div></a>".
+                    "</div>".
+                    "</form>";
+}                   
+  $conn=null;				
       

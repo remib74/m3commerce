@@ -18,9 +18,9 @@ justakefive[at]free.fr
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
 				
-                                $(".imgG").colorbox({ transition:"elastic",speed:"50",height:"75%",width:"50%",retinaImage:true,fadeOut:"50" });
+                                $(".imgG").colorbox({ transition:"elastic",speed:"50",height:"auto",width:"auto",retinaImage:true,fadeOut:"50" });
 				 
-                                $(".contactI").colorbox({ transition:"elastic",speed:"50",height:"50%",width:"30%",retinaImage:true,fadeOut:"50" });
+                                $(".contactI").colorbox({inline:"true",height:"100%",width:"50%", transition:"elastic",speed:"50",retinaImage:true,fadeOut:"50" });
 				  
 				//Example of preserving a JavaScript event for inline calls.
 				$("#click").click(function(){ 
@@ -44,14 +44,7 @@ include_once 'inc/count.php';
 
                     <div id="logo"><img src="template/m3style/imgs/logo.png"><p id="logotxt">m3commerce</p></div>
                     <div id="menu">
-                        <ul>
-                            
-                            <li>accueil  ||  </li>
-                            <li>infographies  ||</li>
-                            <li>peintures  ||  </li>
-                            <li>contact  ||  </li>
-                        
-                        </ul>
+                        <?php include_once 'inc/menu.php';?>
                         
                           </div>
                     <div id="cart"><img src="template/m3style/imgs/cart.jpg"></div>
