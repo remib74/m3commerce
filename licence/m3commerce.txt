@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}m3commerce the cms that's strong
+${licensePrefix}You can use, m3commerce for hobbies/business
+${licensePrefix}justakefive[at]free.fr
+<#if licenseLast??>
+${licenseLast}
+</#if>

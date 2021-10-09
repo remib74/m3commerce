@@ -1,0 +1,312 @@
+        /*
+m3commerce the cms that's strong
+You can use, m3commerce for hobbies/business
+justakefive[at]free.fr
+*/
+        /* 
+    Created on : Jun 6, 2018, 7:57:38 PM
+    Author     : remib2606
+*/
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+            font-family: arial, helvetica;
+        }
+        
+        a {
+            font-size: 12px;
+            color: #333;
+            font-family: arial, helvetica, verdana;
+            text-decoration: none;
+        }
+        
+        .champ:focus {
+            background: #fcfcfc;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+        
+        div {}
+        
+        #main {
+            width: 70%;
+            margin: auto;
+        }
+        
+        #container {
+            padding: 10px;
+        }
+        
+        #logo {
+            margin-right: 150px;
+            display: inline-block;
+        }
+        
+        #logotxt {
+            font-size: 10px;
+            margin: auto;
+        }
+        
+        #menu {
+            width: 70%;
+            display: inline-block;
+            font-size: 10px;
+        }
+        
+        #menu li {
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        #cart {
+            position: absolute;
+            top: 30px;
+            left: 80%;
+            cursor: pointer;
+        }
+        
+        .prod {
+            margin: 10px 10px 20px 0px;
+            height: 150px;
+            width: 250px;
+            padding: 10px;
+            background: #fff;
+            border: solid 1px #bbb;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+            float: left;
+        }
+        
+        .prodzoom {
+            margin: 10px 10px 5px 10px;
+            height: 150px;
+            width: 250px;
+            padding: 10px;
+            background: #fff;
+            border: solid 1px #bbb;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+            float: left;
+        }
+        
+        .zoomtitle {
+            display: block;
+            margin: 10px 10px 0px 10px;
+            color: #909090;
+            font-weight: bolder;
+        }
+        
+        #prozoom {
+            margin: 10px;
+        }
+        
+        #prozoom img {
+            height: 80%;
+            width: auto;
+        }
+        
+        .produits {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        
+        .subtitle1 {
+            display: block;
+            witdh: 100px;
+            clear: both;
+            margin-top: 20px;
+        }
+        
+        .img-prod {
+            display: inline-block;
+            width: 40%;
+            margin-right: 20px;
+            float: left;
+            height: 150px;
+        }
+        
+        .img-prod img {
+            width: 100px;
+        }
+        
+        .txt-prod {
+            display: inline-block;
+            height: 120px;
+        }
+        
+        .t-prod {
+            font-size: 12px;
+            margin-bottom: 8px;
+            width: 100px;
+        }
+        
+        .t-Rub {
+            font-size: 15px;
+            font-weight: bolder;
+            margin-bottom: 8px;
+            color: #0092ef;
+        }
+        
+        .buy {
+            position: relative;
+            top: -30px;
+            left: 45%;
+            cursor: pointer;
+        }
+        /*
+page login
+*/
+        
+        #box_ini {
+            padding: 20px;
+            margin: auto;
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            border: solid 1px #bbb;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .title_putlog {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
