@@ -1,5 +1,5 @@
-<Files ~ "[^index]\.php$">
-Order Allow,Deny
-Deny from All
-</Files>
+RewriteEngine On <br />
+RewriteBase /<br />
+RewriteRule ^index\.html$ index.php?page=/<br />
+RewriteRule ^([a-zA-Z0-9-]*\.html)$ index.php?page=$1 [L,QSA]
 

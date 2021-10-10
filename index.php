@@ -1,5 +1,5 @@
 <?php
-include'siteConfig.php';
+include('siteConfig.php');
 ?>
 <!DOCTYPE html>
 <!--
@@ -43,50 +43,45 @@ justakefive[at]free.fr
                     <div id="logo"><img src="template/m3style/imgs/logo.png"><p id="logotxt">m3commerce</p></div>
                     <div id="menu">
                     <?php
-                    include 'inc/menu.php';
+                       $page = basename($_SERVER['REQUEST_URI']);
+                       //echo $_SERVER['REQUEST_URI'];
+                       if ($page=='index.php'){
+                        include 'inc/menu.php';
+                       }
+                    
                     ?>
                         
                           </div>
                     <div id="cart"><img src="template/m3style/imgs/cart.jpg"></div>
                 </header>
-                 <div class="produits">
-                    <div class="produits-accueil">
-                               <?php
-      $sqlprod = "SELECT * FROM m3_prod ORDER BY rubrique"; 
-     
-     
+                <?php
+require('controller/controller.php');
 
-        foreach ($conn->query($sqlprod) as $row) {
-            $rowid = $row['id'];
-            $rowRub = $row['rubrique'];
-            $rowTit = $row['title'];
-            $rowFor = $row['format'];
-            $rowPri = $row['prix'];
-              echo 
-        "<div class='prod'>" .
-        "<div class='img-prod'>".
-        "<a class='imgG' href='img/prod/$rowRub/$rowid.jpg'><img src='img/prod/$rowRub/$rowid.jpg' ></a></div>".
-        
-
-            "<div class='txt-prod'>"."<div class='t-Rub'>$rowRub </div>".
-                                       "<div class='t-prod'>$rowTit </div>".
-                                "<div class='t-prod'> $rowFor</div>".
-                                "<div class='t-prod'>$rowPri <span>&euro;</span></div>".
-                            "</div>".
-                             "<div class='buy'>".
-                    "<a href='contact.php?rowid=$rowid&rowRub=$rowRub&rowTit=$rowTit&rowFor=$rowFor&rowPri=$rowPri' class='iframe'  ><img src='template/m3style/imgs/buy.jpg'/></div></a>".
-                    "</div>";
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'contactImages') {
+        contactImages();
+    }
 }
-  $conn=null;
-							?>
-      
-                          
 
-      
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'dessins') {
+        dessins();
+    }
+}
 
+?>
+                 <?php 
+ 
+    $page = basename($_SERVER['REQUEST_URI']);
+    //echo $_SERVER['REQUEST_URI'];
+    if ($page=='index.php'){
+        require_once('view/frontend.php');
+    }
 
-                </div>
-            </div>
+ 
+ 
+                 
+                  ?>
             </div>
         </div>
 

@@ -54,7 +54,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <!--
 m3commerce the cms that's strong
@@ -90,22 +89,12 @@ justakefive[at]free.fr
 
             <div id="container">
  
-          <header>
-
-                    <div id="logo"><img src="template/m3style/imgs/logo.png"><p id="logotxt">m3commerce</p></div>
-                    <div id="menu">
-                        <?php include_once 'inc/menu.php';?>
-                        
-                          </div>
-                    <div id="cart"><img src="template/m3style/imgs/cart.jpg"></div>
-                </header>
+       
  
                 
              
          <div id="formulaire">
-         <!-- debut du message captcha -->
-     
-        <!--fin du message captcha-->
+        
              <form action="inc/formC.php" method="post" enctype="text/plain">
        
        <label for="email">entrez votre email...</label><br/>
@@ -126,24 +115,43 @@ $oeuvreFor= htmlspecialchars($_GET['rowFor']);
 $oeuvrePri= htmlspecialchars($_GET['rowPri']);
 echo" <p>";
 echo $oeuvreRub.' '.$oeuvreTit.' '.$oeuvreFor.' '.$oeuvrePri.'&euro;'.'<br/>';
-echo "<img src='img/prod/$oeuvreRub/$oeuvreId.jpg' width='50%' height='auto' >";
+echo "<img src='public/img/prod/$oeuvreRub/$oeuvreId.jpg' width='50%' height='auto' >";
 echo" </p>";
 ?>
-<input type="hidden" name="_iconcaptcha-token" value="<?= IconCaptcha::token() ?>"/>
 
-<!-- The IconCaptcha will be rendered in this element - REQUIRED -->
-<div class="iconcaptcha-holder" data-theme="light"></div>
 
 <input type="submit" value="Envoyer le mail">
 </form>
          </div></div></div>
          <!-- fichier script pour le captcha-->
  
-
+        <!-- The IconCaptcha will be rendered in this element - REQUIRED -->
+        <div class="iconcaptcha-holder" data-theme="light"></div>
+        
         <!-- Include jQuery Library -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="assets/demo.js" type="text/javascript"></script>
         <script src="colorbox/jquery.colorbox-min.js"></script>
+
+        <!-- Include IconCaptcha script - REQUIRED -->
+        <script src="assets/js/icon-captcha.min.js" type="text/javascript"></script>
+
+        <script>
+
+$(document).ready(function(){
+    //Examples of how to assign the Colorbox event to elements
+    
+                    $(".imgG").colorbox({ transition:"elastic",speed:"50",retinaImage:true,fadeOut:"50" });
+     
+                    $(".contactI").colorbox({ transition:"elastic",speed:"50",retinaImage:true,fadeOut:"100" });
+      
+    //Example of preserving a JavaScript event for inline calls.
+    $("#click").click(function(){ 
+        $('#click').css({"background-color":"rgb(30,30,30,0.3)", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+        return false;
+    });
+});
+
 
         <!-- Include IconCaptcha script - REQUIRED -->
         <script src="assets/js/icon-captcha.min.js" type="text/javascript"></script>
@@ -204,13 +212,7 @@ $(document).ready(function(){
             });
         </script>
 
-        <!--
-            Script to submit the form(s) with Ajax.
-
-            NOTE: If you want to use FormData instead of .serialize(), make sure to
-            include the inputs 'ic-hf-se', 'ic-hf-id' and 'ic-hf-hp' into your FormData object.
-            Take a look at the commented code down below.
-        -->
+       
         <script type="text/javascript">
             $(document).ready(function() {
                 $('form').submit(function(e) {
@@ -235,5 +237,6 @@ $(document).ready(function(){
             });
         </script>
 <!-- fin fichier script pour le captcha-->
+
     </body>
 </html>
