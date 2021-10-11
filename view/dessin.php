@@ -34,6 +34,12 @@ justakefive[at]free.fr
 
     </head>
     <body>
+    
+    <?include 'inc/header.php';?>
+                   
+                  
+                              
+                          </div>
                  <div class="produits">
                     <div class="produits-accueil">
                               

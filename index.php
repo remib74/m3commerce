@@ -32,28 +32,8 @@ justakefive[at]free.fr
 		</script>
     </head>
     <body>
-<?php
-//include_once 'inc/count.php';
-?>
-        <div id="main">
 
-            <div id="container">
-                <header>
-
-                    <div id="logo"><img src="template/m3style/imgs/logo.png"><p id="logotxt">m3commerce</p></div>
-                    <div id="menu">
-                    <?php
-                       $page = basename($_SERVER['REQUEST_URI']);
-                       //echo $_SERVER['REQUEST_URI'];
-                       if ($page=='index.php'){
-                        include 'inc/menu.php';
-                       }
-                    
-                    ?>
-                        
-                          </div>
-                    <div id="cart"><img src="template/m3style/imgs/cart.jpg"></div>
-                </header>
+             <?php include 'inc/header.php';?>
                 <?php
 require('controller/controller.php');
 
@@ -72,11 +52,13 @@ if (isset($_GET['imgIndex'])) {
 ?>
                  <?php 
  
-    $page = basename($_SERVER['REQUEST_URI']);
+    $page = $_SERVER['QUERY_STRING'];
     //echo $_SERVER['REQUEST_URI'];
-    if ($page=='index.php'){
+    if ($page===''){
         require_once('view/frontend.php');
-    }
+        }
+        
+       
 
  
  
