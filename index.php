@@ -49,21 +49,18 @@ if (isset($_GET['imgIndex'])) {
     }
 }
 
-?>
-                 <?php 
- 
-    $page = $_SERVER['QUERY_STRING'];
-    //echo $_SERVER['REQUEST_URI'];
-    if ($page===''){
-        require_once('view/frontend.php');
-        }
         
-       
 
- 
- 
-                 
-                  ?>
+
+?>
+<?php
+ $page = $_SERVER['QUERY_STRING'];
+ //echo $_SERVER['REQUEST_URI'];
+ if ($page===''){
+    listImages();
+     }
+
+?>
             </div>
         </div>
 
