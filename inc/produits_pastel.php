@@ -20,7 +20,7 @@
             echo
         "<div class='prod'>" .
         "<div class='img-prod'>".
-        "<a class='imgG' href='img/prod/$rowRub/$rowid.jpg'><img src='img/prod/$rowRub/$rowid.jpg' ></a></div>".
+        "<a class='imgG' href='public/img/prod/$rowRub/$rowid.jpg'><img src='public/img/prod/$rowRub/$rowid.jpg' ></a></div>".
 
 
             "<div class='txt-prod'>"."<div class='t-Rub'>$rowRub </div>".
@@ -30,7 +30,7 @@
                             "</div>".
                              "<div class='buy'>".
 
-                    "<a href='contact.php?rowid=$rowid&rowRub=$rowRub&rowTit=$rowTit&rowFor=$rowFor&rowPri=$rowPri'  ><img src='template/m3style/imgs/buy.jpg'/></div></a>".
+                    "<a href='?imgIndex=contactImages&rowid=$rowid&rowRub=$rowRub&rowTit=$rowTit&rowFor=$rowFor&rowPri=$rowPri' class='iframe'  ><img src='template/m3style/imgs/buy.jpg'/></div></a>".
                     "</div>".
                     "</form>";
 }

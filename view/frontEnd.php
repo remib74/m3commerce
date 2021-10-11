@@ -2,7 +2,7 @@
                     <div class="produits-accueil">
                                <?php
 
-    include('siteConfig.php');
+    include('inc/siteConfig.php');
 
       $sqlprod = "SELECT * FROM m3_prod ORDER BY rubrique"; 
      

@@ -2,7 +2,7 @@
             <div id="container">
 <header>
        
-<div id="logo"><img src="template/m3style/imgs/logo.png"><p id="logotxt">m3commerce</p></div>
+<div id="logo"><a href="index.php"><img src="template/m3style/imgs/logo.png"></a><p id="logotxt">m3commerce</p></div>
 <div id="menu">
 <?php
     

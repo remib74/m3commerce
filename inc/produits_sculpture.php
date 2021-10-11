@@ -6,7 +6,7 @@
  * justakefive[at]free.fr
  */
 
-      $sqlprod = "SELECT * FROM m3_prod WHERE rubrique='infographie' ORDER BY id";
+      $sqlprod = "SELECT * FROM m3_prod WHERE rubrique='sculpture' ORDER BY id";
 
 
 

@@ -1,5 +1,5 @@
 <?php
-include('siteConfig.php');
+include('inc/siteConfig.php');
 ?>
 <!DOCTYPE html>
 <!--
@@ -48,8 +48,28 @@ if (isset($_GET['imgIndex'])) {
         dessins();
     }
 }
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'infographies') {
+        infographies();
+    }
+}
 
-        
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'pastels') {
+        pastels();
+    }
+}
+ 
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'peintures') {
+        peintures();
+    }
+}
+if (isset($_GET['imgIndex'])) {
+    if ($_GET['imgIndex'] == 'sculptures') {
+        sculptures();
+    }
+}
 
 
 ?>

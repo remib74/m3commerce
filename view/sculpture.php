@@ -34,17 +34,16 @@ justakefive[at]free.fr
 
     </head>
     <body>
-    
     <?include 'inc/header.php';?>
                    
                   
                               
-                          </div>
-                 <div class="produits">
-                    <div class="produits-accueil">
-                              
-                        <?php
-                              include_once 'inc/produits_dessin.php';
+                   </div>
+          <div class="produits">
+             <div class="produits-accueil">
+                       
+                 <?php
+                              include_once 'inc/produits_sculpture.php';
                                    ?>
                 </div>
                      
