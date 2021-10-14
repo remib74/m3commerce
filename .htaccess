@@ -4,5 +4,5 @@ RewriteBase /m3commerce/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . http://www.codingandscripting.fr/m3commerce/index.php [L]
+RewriteRule . http://127.0.0.1/m3commerce/index.php [L]
 </IfModule>
