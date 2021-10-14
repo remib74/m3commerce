@@ -1,6 +1,4 @@
-<?php
-include('inc/siteConfig.php');
-?>
+
 <!DOCTYPE html>
 <!--
 m3commerce the cms that's strong
@@ -34,6 +32,8 @@ justakefive[at]free.fr
     <body>
 
              <?php include 'inc/header.php';?>
+             <div class="produits">
+                    <div class="produits-accueil">
                 <?php
 require('controller/controller.php');
 
@@ -79,8 +79,9 @@ if (isset($_GET['imgIndex'])) {
  if ($page===''){
     listImages();
      }
-
+    
 ?>
+
             </div>
         </div>
 

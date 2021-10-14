@@ -1,6 +1,6 @@
 <?php
 
-//require('../model/model.php');
+
 
 function contactImages()
 {
@@ -42,8 +42,29 @@ function sculptures()
 }
 
 function listImages()
-{
+{  
+
+    require('model/siteConfig.php');         
+            //echo ($ImagesAll);
+            
+            foreach ($conn->query($sqlprod) as $row) {
+                $rowid = $row['id'];
+                $rowRub = $row['rubrique'];
+                $rowTit = $row['title'];
+                $rowFor = $row['format'];
+                $rowPri = $row['prix'];
+                
 
     require('view/frontEnd.php');
+   
 }
+
+}   
+    
+
+
+
+
+
+
 

@@ -19,5 +19,6 @@ catch(PDOException $e)
     echo "Connection failed: " . $e->getMessage();
     }
     
+    $sqlprod = "SELECT * FROM m3_prod ORDER BY rubrique"; 
 
-    ?>
+    
