@@ -85,6 +85,7 @@ if (isset($_GET['imgIndex'])) {
             </div>
         </div>
 
-
+<?php $conn=null;
+?>
     </body>
 </html>
