@@ -35,49 +35,33 @@ justakefive[at]free.fr
              <div class="produits">
                     <div class="produits-accueil">
                 <?php
-require('controller/controller.php');
+require_once('controller/classAffiche.php');
 
 if (isset($_GET['imgIndex'])) {
     if ($_GET['imgIndex'] == 'contactImages') {
-        contactImages();
+        $oeuvre=new Affich();
+        $contactOeuvre = $oeuvre->contactImages();
+        
     }
 }
 
 if (isset($_GET['imgIndex'])) {
-    if ($_GET['imgIndex'] == 'dessins') {
-        dessins();
-    }
-}
-if (isset($_GET['imgIndex'])) {
-    if ($_GET['imgIndex'] == 'infographies') {
-        infographies();
-    }
-}
-
-if (isset($_GET['imgIndex'])) {
-    if ($_GET['imgIndex'] == 'pastels') {
-        pastels();
-    }
-}
- 
-if (isset($_GET['imgIndex'])) {
-    if ($_GET['imgIndex'] == 'peintures') {
-        peintures();
-    }
-}
-if (isset($_GET['imgIndex'])) {
-    if ($_GET['imgIndex'] == 'sculptures') {
-        sculptures();
-    }
+    
+        $rub=htmlspecialchars($_GET['imgIndex']);
+        $element=new Affich();
+        $postElement = $element->rubAffich($rub);
+    
 }
 
 
 ?>
 <?php
+require_once('controller/classAffiche.php');
  $page = $_SERVER['QUERY_STRING'];
  //echo $_SERVER['REQUEST_URI'];
  if ($page===''){
-    listImages();
+    $element=new Affich();
+        $postElement = $element->listImages();
      }
     
 ?>

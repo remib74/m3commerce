@@ -52,19 +52,6 @@ justakefive[at]free.fr
 
 
 
-<?php 
-  
-$oeuvreId= htmlspecialchars($_GET['rowid']);
-$oeuvreRub= htmlspecialchars($_GET['rowRub']);
-$oeuvreTit= htmlspecialchars($_GET['rowTit']);
-$oeuvreFor= htmlspecialchars($_GET['rowFor']);
-$oeuvrePri= htmlspecialchars($_GET['rowPri']);
-echo" <p>";
-echo $oeuvreRub.' '.$oeuvreTit.' '.$oeuvreFor.' '.$oeuvrePri.'&euro;'.'<br/>';
-echo "<img src='public/img/prod/$oeuvreRub/$oeuvreId.jpg' width='50%' height='auto' >";
-echo" </p>";
-?>
-
 
 <input type="submit" value="Envoyer le mail">
 </form>
